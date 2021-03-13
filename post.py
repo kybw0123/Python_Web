@@ -14,7 +14,7 @@ def calculate(num=None):
     if request.method == 'POST':
         temp = request.form['num']
     else:
-        temp = None
+        temp = Noneㅔㅑㅔ
     return redirect(url_for('post', num=temp))
 
 

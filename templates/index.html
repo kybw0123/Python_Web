@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>메인페이지</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-sakura.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-1.12.3.js"></script>
-    <script src="js/jquery-sakura.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-sakura.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <script src="{{ url_for('static', filename='js/jquery-1.12.3.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-sakura.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
 </head>
 <body>
     <div class="cover"></div>
@@ -22,7 +22,6 @@
                         <ul class="gnb">
                             <li>
                                 <a href="javascript:;">text1</a>
-                                <!-- 게시판 추가해야 하는곳-->
                                 <ul class="depth2">
                                     <li><a href="javascript:;">text1-1</a></li>
                                     <li><a href="javascript:;">text1-2</a></li>
@@ -30,7 +29,6 @@
                             </li>
                             <li>
                                 <a href="javascript:;">text2</a>
-                                <!-- 게시판 추가해야 하는곳-->
                                 <ul class="depth2">
                                     <li><a href="javascript:;">text2-1</a></li>
                                     <li><a href="javascript:;">text2-2</a></li>
@@ -38,7 +36,6 @@
                             </li>
                             <li>
                                 <a href="javascript:;">text3</a>
-                                <!-- 게시판 추가해야 하는곳-->
                                 <ul class="depth2">
                                     <li><a href="javascript:;">text3-1</a></li>
                                     <li><a href="javascript:;">text3-2</a></li>
@@ -46,7 +43,6 @@
                             </li>
                             <li>
                                 <a href="javascript:;">text4</a>
-                                <!-- 게시판 추가해야 하는곳-->
                                 <ul class="depth2">
                                     <li><a href="javascript:;">text4-1</a></li>
                                     <li><a href="javascript:;">text4-2</a></li>
@@ -54,7 +50,6 @@
                             </li>
                             <li>
                                 <a href="javascript:;">text5</a>
-                                <!-- 게시판 추가해야 하는곳-->
                                 <ul class="depth2 depth3">
                                     <li><a href="javascript:;">text5-1</a></li>
                                     <li><a href="javascript:;">text5-2</a></li>
