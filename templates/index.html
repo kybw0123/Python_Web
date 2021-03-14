@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>메인페이지</title>
+    {% if title %}
+      <title>메인페이지- {{ title }}</title>
+    {% else %}
+      <title>메인페이지</title>
+    {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-sakura.css')}}">
@@ -23,8 +27,9 @@
                             <li>
                                 <a href="javascript:;">text1</a>
                                 <ul class="depth2">
-                                    <li><a href="javascript:;">text1-1</a></li>
-                                    <li><a href="javascript:;">text1-2</a></li>
+
+                                    <li><a href="/board">text1-1</a></li>
+                                    <li><a href="{{ url_for('index')}}">text1-2</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -61,6 +66,7 @@
                 </div>
             </div>
         </div><!-- header종료 -->
+        {% block content %}
         <div class="container">
             <div class="main_visual">
                 <div class="time">
@@ -124,6 +130,7 @@
             </div>
         </div><!-- container종료 -->
     </div><!-- wrap종료 -->
+    {% endblock %}
     <div class="f_wrap">
         <div class="footer">
             <div class="footer_in">
@@ -142,5 +149,6 @@
             </div>
         </div>
     </div><!-- f_wrap종료 -->
+
 </body>
 </html>
