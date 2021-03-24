@@ -13,6 +13,7 @@
 #### __사용할 프레임워크 : Flask__
 ***
 
+
 https://drive.google.com/drive/folders/1BDoEr3BaNYhwqo-FEpXh2dVvvA5M6BxE?usp=sharing
 
 Github 자체에 있는 프로젝트를 이용해서 진행도 확인할 예정
