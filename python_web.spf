@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>python_web</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>python_web</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8mb4</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOTpYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDE2VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vMFhOU1N0cmluZ1hOU09iamVjdNIeHzIz
+			Xk5TTXV0YWJsZUFycmF5ozI0NVdOU0FycmF5WE5TT2JqZWN00h4f
+			IjeiIjhYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLROzxUZGF0
+			YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBlAGwAcAByAHQAdgB6
+			AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA1QDeAPQA+AEFAQ4B
+			EwEVARcBGQEeASgBKgEtATIBRAFIAVEBWgFfAW4BcgF6AYMBiAGL
+			AZQBpgGpAa4AAAAAAAACAQAAAAAAAAA9AAAAAAAAAAAAAAAAAAAB
+			sA==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{1, 0}, {1063, 749}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>table</key>
+			<string>topic</string>
+			<key>view</key>
+			<string>SP_VIEW_CONTENT</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>LOAD DATA INFILE '/Users/YB/Downloads/제목 없는 스프레드시트 - 시트2 (1).csv'
+INTO TABLE EPL
+FIELDS
+TERMINATED BY ','
+LINES TERMINATED BY '\n'
+(`team_id`,`team_name`,`player_backnumber`,`player_position`,`player_country`,`player_name`)</string>
+		<string>INSERT INTO EPL (taam_id,team_name,player_name,player_age,player_position,player_country,player_goal,player_assist)
+VALUES(1, '아스날', '토머스 파티',29,'MF','가나',0,0)</string>
+		<string>INSERT INTO EPL (taam_id,team_name,player_name,player_age,player_position,player_country,player_goal,player_assist)
+VALUES(1,1, '아스날', '토머스 파티',29,'MF','가나',0,0)</string>
+		<string>INSERT INTO EPL
+VALUES(1,1, '아스날', '토머스 파티',29,'MF','가나',0,0)</string>
+		<string>INSERT INTO EPL
+VALUES(,1, '아스날', '토머스 파티',29,'MF','가나',0,0)</string>
+		<string>INSERT INTO EPL
+VALUES(1,1, '아스날', '보이치에흐 슈체스니',32,'GK','폴란드',0,0)</string>
+		<string>INSERT INTO EPL
+VALUES(1, '아스날', '보이치에흐 슈체스니',32,'GK','폴란드',0,0)</string>
+		<string>ALTER TABLE EPL ADD COLUMN 
+(taam_id INT,
+team_name VARCHAR(20),
+player_name VARCHAR(20),
+player_age INT,
+player_position VARCHAR(20),
+player_country VARCHAR(20),
+player_goal INT,
+player_assist INT)</string>
+		<string>SELECT * FROM topic</string>
+		<string>INSERT INTO topic(title,description,created,author,profile) VALUES("SQL Server","SQL Server is...",NOW(),'kyb','QA')</string>
+		<string>INSERT INTO topic(title,description,created,author,profile) VALUES("PostgreSQL","PostgreSQL is...",NOW(),'kyb','QA')</string>
+		<string>INSERT INTO topic(title,description,created,author,profile) VALUES("MongoDB","MongoDB is...",NOW(),'kyb','QA')</string>
+		<string>INSERT INTO topic(title,description,created,author,profile) VALUES("ORACLE","ORACLE is...",NOW(),'kyb','QA')</string>
+		<string>SELECT FROM topic</string>
+		<string>SELECT FROM topic *</string>
+		<string>SELECT topic *</string>
+		<string>INSERT INTO topic(title,description,created,author,profile) VALUES("MySQL","MYSQL is...",NOW(),'kyb','QA')</string>
+		<string>DESC topic</string>
+		<string>CREATE TABLE topic(
+id INT(11) NOT NULL AUTO_INCREMENT,
+title VARCHAR(50) NOT NULL,
+description TEXT NULL,
+created DATETIME NOT NULL,
+author VARCHAR(30) NULL,
+profile VARCHAR(100) NULL,
+PRIMARY KEY(id))</string>
+		<string>SELECT id, nickname
+FROM user
+WHERE pw = '비밀번호486'</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.5-10.5.9-MariaDB</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
