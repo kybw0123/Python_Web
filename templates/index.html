@@ -1,73 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    {% if title %}
-      <title>메인페이지- {{ title }}</title>
-    {% else %}
-      <title>메인페이지</title>
-    {% endif %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css')}}">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-sakura.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    <script src="{{ url_for('static', filename='js/jquery-1.12.3.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/jquery-sakura.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
-</head>
-<body>
-    <div class="cover"></div>
-    <div class="wrap">
-        <div class="header">
-            <div class="header_wrap">
-                <div class="header_bottom">
-                    <div class="header_bottom_in">
-                        <ul class="gnb">
-                            <li>
-                                <a href="javascript:;">text1</a>
-                                <ul class="depth2">
 
-                                    <li><a href="/board">text1-1</a></li>
-                                    <li><a href="{{ url_for('index')}}">text1-2</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:;">text2</a>
-                                <ul class="depth2">
-                                    <li><a href="{{ url_for('getboard')}}">text2-1</a></li>
-                                    <li><a href="javascript:;">text2-2</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:;">text3</a>
-                                <ul class="depth2">
-                                    <li><a href="javascript:;">text3-1</a></li>
-                                    <li><a href="javascript:;">text3-2</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:;">text4</a>
-                                <ul class="depth2">
-                                    <li><a href="javascript:;">text4-1</a></li>
-                                    <li><a href="javascript:;">text4-2</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:;">text5</a>
-                                <ul class="depth2 depth3">
-                                    <li><a href="javascript:;">text5-1</a></li>
-                                    <li><a href="javascript:;">text5-2</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="dep_bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- header종료 -->
+{% include 'header.html' %}  <!--헤더삽입-->
+
+<body>
+<div class="cover"></div>
+
+{% include 'menu.html' %} <!--상단 메인메뉴 삽입-->
+
+    <div class="wrap">
         <div class="container">
             <div class="main_visual">
+                <div class="log">
+                    <form action="">
+                        <fieldset>
+                            <legend class="blind">로그인</legend>
+                                <div class="form1">
+                                    <label for="id" class="id1">아이디</label>
+                                    <input type="text" name="" placeholder="아이디" required="" maxlength="">
+                                </div>
+                                <div class="form2">
+                                    <label for="pw" class="pw1">비밀번호</label>
+                                    <input type="password" name="" placeholder="비밀번호" required="" maxlength="">
+                                </div>
+                                <input type="submit" value="login" class="log1">
+                        </fieldset>
+                    </form>
+                    <div class="join">
+                        <p class="jo"><a href="{{ url_for('signup') }}">회원가입</a></p>
+                    </div>
+                </div>
                 <div class="time">
                     <div class="clock">
                         <div class="time_box">
@@ -129,24 +91,8 @@
             </div>
         </div><!-- container종료 -->
     </div><!-- wrap종료 -->
-    <div class="f_wrap">
-        <div class="footer">
-            <div class="footer_in">
-                <div class="footer_wrap">
-                    <ul>
-                        <li><span>주소</span> : 서울시 00구 00로 000</li>
-                        <li><span>대표자</span> :  홍길동</li>
-                    </ul>
-                    <ul>
-                        <li><span>대표전화</span> : 0000-0000</li>
-                        <li><span>팩스</span> : 0000-0000</li>
-                        <li><span>메일</span> : ABCD@naver.com</li>
-                    </ul>
-                    <p class="copy">Copyright ⓒ 2021 STUDY All right reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div><!-- f_wrap종료 -->
+
+ {% include 'footer.html' %} <!--하단 푸터 삽입-->
 
 </body>
 </html>

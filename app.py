@@ -12,5 +12,10 @@ def index():
 def getboard():
     return render_template('board.html', title='게시판')
 
+#회원가입 페이지
+@app.route("/signup")
+def signup():
+    return render_template('membership.html')
+
 if __name__ =="__main__":
     app.run(debug=True)
