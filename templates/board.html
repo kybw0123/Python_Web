@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+<title>게시판</title>
 
 {% include 'header.html' %}  <!--헤더삽입-->
 
@@ -27,7 +28,7 @@
                         </fieldset>
                     </form>
                     <div class="join">
-                        <p class="jo"><a href="javascript:;">회원가입</a></p>
+                        <p class="jo"><a href="{{ url_for('signup') }}">회원가입</a></p>
                     </div>
                 </div>
                 <div class="time">

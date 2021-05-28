@@ -9,13 +9,13 @@ def index():
     return render_template('index.html')
 
 @app.route('/board')
-def getboard():
+def board():
     return render_template('board.html', title='게시판')
 
 #회원가입 페이지
 @app.route("/signup")
 def signup():
-    return render_template('membership.html')
+    return render_template('membership.html', title='회원가입')
 
 if __name__ =="__main__":
     app.run(debug=True)
