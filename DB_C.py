@@ -25,6 +25,8 @@ def db(sql):
     print(result)
     db_connect.commit()
     cur.close()
+
+
 if __name__ == '__main__':
     #sql = "insert into epl(team_id, team_name, player_backnumber,player_position,player_country,player_name) values ('21', '테스트', '5', 'K', '대한민국', '테스트2');"
     sql = 'SELECT * FROM EPL;'
